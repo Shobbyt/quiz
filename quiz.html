@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Quiz App</title>
+   
+
+    <link rel="stylesheet" href="quiz.css">
+   
+
+</head>
+<body>
+
+<div id="start-container">
+    <h1>Welcome to the Tech Quiz</h1>
+    <label for="question-count">Enter number of questions (1-15): </label>
+    <input type="number" id="question-count" min="1" max="15">
+    <button id="start-quiz">Start Quiz</button>
+</div>
+
+<div id="quiz-container" class="hidden">
+    <div id="question-box" class="question-box"></div>
+    <button id="prev-btn" class="hidden">Previous</button>
+    <button id="next-btn" class="hidden">Next</button>
+    <button id="submit-btn" class="hidden">Submit</button>
+</div>
+
+<div id="result-container" class="hidden">
+    <h2>Quiz Results</h2>
+    <div id="results"></div>
+    <button id="retry-quiz">Try Quiz Again</button>
+</div>
+
+
+<script src="quiz.js"></script>
+</body>
+
+</html>
